@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #122e44;
+  /* background-color: #122e44; */
 }
 
 img {
@@ -63,31 +63,28 @@ header {
 }
 
 .nav_links li a {
-margin-left:15px ;
-color: #fff;
-padding: 5px 15px;
-border-radius: 5px;
-transition: all .5s ease-in-out;
-
+  margin-left: 15px;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav_links li a:hover {
-background-color: #24caac;
-
+  background-color: #24caac;
 }
 
-.logo h2 a{
+.logo h2 a {
   color: #fff;
   text-transform: uppercase;
 }
 
-
-.inner_homepage .child_homepage img{
- /* width: 400px;
+.inner_homepage .child_homepage img {
+  /* width: 400px;
  height: 400px; */
 }
 
-.inner_homepage{
+.inner_homepage {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,26 +93,24 @@ background-color: #24caac;
   color: #fff;
 }
 
-.child_homepage{
+.child_homepage {
   flex-basis: 45%;
 }
 
-.child_homepage h1{
+.child_homepage h1 {
   font-size: 40px;
-  color: #24ca24;  
+  color: #24ca24;
 }
 
-.span_child{
+.span_child {
   color: #e0376f;
-
-
 }
-.child_homepage p{
+.child_homepage p {
   font-size: 25px;
-   margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
-.btn{
+.btn {
   background-color: #24caac;
   padding: 12px 28px;
   border-radius: 20px;
@@ -123,11 +118,49 @@ background-color: #24caac;
   border: 1px solid #24caac;
   font-weight: 700;
   cursor: pointer;
-  transition: all .3s ease;
-
+  transition: all 0.3s ease;
 }
-.btn:hover{
+.btn:hover {
   background: transparent;
   letter-spacing: 2px;
+}
 
+.innersoftware {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.innersoftware_child {
+  flex-basis: 31%;
+  color: #fff;
+  padding: 25px 20px;
+  background: rgba(55, 66, 80, 0.281);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.innersoftware_child:hover {
+  border: 1px solid #24caac;
+}
+
+
+.innersoftware_child .icon {
+  font-size: 25px;
+  color: #24caac;
+
+}
+
+.innersoftware_child h3 {
+font-size: 20px;
+margin: 5px 0;
+}
+
+
+.innersoftware_child p {
+font-size: 20px;
+margin: 5px 0;
 }
