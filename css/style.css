@@ -198,3 +198,57 @@ header {
 .child_courses .detail ul li {
   color: gold;
 }
+
+
+.inner_achivement{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.child_achivement{
+  flex-basis: 40%;
+}
+.child_achivement img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.child_achivement2{
+flex-basis: 46%;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+justify-content: space-between;
+}
+
+.single_detail{
+  flex-basis: 45%;
+  padding: 50px 40px;
+  color: #fff;
+  border-radius: 5px;
+  transition: .3s;
+}
+.single_detail:hover{
+transform: scale(1.1);  
+}
+
+.sd1{
+  background: #eaa023;
+  margin-bottom: 20px;  
+}
+
+.sd2{
+  background: #e91e63;
+  margin-bottom: 20px;  
+}
+.sd3{
+  background: #24caac;
+ 
+}
+.sd4{
+  background: #2f363e;
+
+}
