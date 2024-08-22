@@ -147,20 +147,54 @@ header {
   border: 1px solid #24caac;
 }
 
-
 .innersoftware_child .icon {
   font-size: 25px;
   color: #24caac;
-
 }
 
 .innersoftware_child h3 {
-font-size: 20px;
-margin: 5px 0;
+  font-size: 20px;
+  margin: 5px 0;
 }
 
-
 .innersoftware_child p {
-font-size: 20px;
-margin: 5px 0;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+/* Certificates   */
+
+.inner_courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.child_courses {
+  flex-basis: 24%;
+  color: #fff;
+  padding: 20px 10px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.child_courses:hover {
+  border: 1px solid #24caac;
+}
+
+.child_courses .detail {
+  display: flex;
+  justify-content: space-between;
+}
+.child_courses .detail ul {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 35%;
+}
+
+.child_courses .detail ul li {
+  color: gold;
 }
