@@ -81,11 +81,6 @@ header {
   text-transform: uppercase;
 }
 
-.inner_homepage .child_homepage img {
-  /* width: 400px;
- height: 400px; */
-}
-
 .inner_homepage {
   display: flex;
   justify-content: space-between;
@@ -299,5 +294,78 @@ header {
 
 .inner_references .child_references a:hover {
   text-decoration: underline;
+
+}
+
+.inner_contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.child_contact {
+  flex-basis: 45%;
+}
+
+
+.child_contact form {
+  padding: 50px 40px;
+  background: #2f363e;
+  border-radius: 5px;
+}
+
+.child_contact form input {
+  height: 50px;
+}
+
+.child_contact form input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 35px;
+  background: #24292d;
+  border: none;
+  resize: none;
+  border-radius: 25px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.child_contact form input,
+textarea:focus {
+  color: #fff;
+
+}
+
+.child_contact form input:focus {
+  letter-spacing: 1px;
+}
+
+.child_contact form textarea:focus {
+  letter-spacing: 1px;
+
+}
+
+.child_contact form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 0;
+  background: #24CAAC;
+  border: 1px solid #24CAAC;
+  color: #fff;
+
+}
+
+.child_contact form button:hover {
+  background: transparent;
+  color: #fff;
 
 }
