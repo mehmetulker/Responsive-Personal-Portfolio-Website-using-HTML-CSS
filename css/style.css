@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* background-color: #122e44; */
+  background-color: #122e44;
 }
 
 img {
@@ -76,7 +76,7 @@ header {
   background-color: #24caac;
 }
 
-.logo h2 a {
+.logo h4 a {
   color: #fff;
   text-transform: uppercase;
 }
@@ -126,6 +126,7 @@ header {
 
 .innersoftware {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 80%;
   justify-content: space-between;
@@ -286,15 +287,13 @@ header {
 }
 
 .inner_references .child_references a {
-  color: #24CAAC;
+  color: #24caac;
   margin: 10px 0;
   display: inline-block;
-
 }
 
 .inner_references .child_references a:hover {
   text-decoration: underline;
-
 }
 
 .inner_contact {
@@ -304,13 +303,11 @@ header {
   align-items: center;
   width: 80%;
   margin: 0 auto;
-
 }
 
 .child_contact {
   flex-basis: 45%;
 }
-
 
 .child_contact form {
   padding: 50px 40px;
@@ -331,17 +328,16 @@ textarea {
   border: none;
   resize: none;
   border-radius: 25px;
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .child_contact form input,
 textarea:focus {
   color: #fff;
-
 }
 
 .child_contact form input:focus {
@@ -350,7 +346,6 @@ textarea:focus {
 
 .child_contact form textarea:focus {
   letter-spacing: 1px;
-
 }
 
 .child_contact form button {
@@ -358,14 +353,160 @@ textarea:focus {
   padding: 10px;
   border-radius: 25px;
   margin-bottom: 0;
-  background: #24CAAC;
-  border: 1px solid #24CAAC;
+  background: #24caac;
+  border: 1px solid #24caac;
   color: #fff;
-
 }
 
 .child_contact form button:hover {
   background: transparent;
   color: #fff;
+}
 
+/* Responsive Dropdown Menu */
+
+/* Hamburger menu toggle button */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: white;
+
+  font-size: 24px;
+}
+
+.container {
+  transition: transform 0.5s ease;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px 0;
+    gap: 10px;
+    z-index: 10;
+  }
+
+  .nav_links.active {
+    display: flex;
+  }
+
+  .container.slide-down {
+    transform: translateY(150px);
+    transition: transform 0.5s ease;
+    -webkit-transform: translateY(150px);
+    -webkit-transition: transform 0.5s ease;
+    -moz-transform: translateY(150px);
+    -moz-transition: transform 0.5s ease;
+    -ms-transform: translateY(150px);
+    -ms-transition: transform 0.5s ease;
+    -o-transform: translateY(150px);
+    -o-transition: transform 0.5s ease;
+  }
+
+  .inner_homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .child_homepage {
+    margin-bottom: 20px;
+  }
+
+  .child_homepage h1 {
+    font-size: 14px;
+  }
+
+  .child_homepage p {
+    font-size: 12px;
+  }
+
+  .child_homepage img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .logo h2 a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  .inner_contact {
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .innersoftware_child {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .certificates {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .inner_references {
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  #aboutme h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 5px;
+    font-size: 12px;
+  }
 }
